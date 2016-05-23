@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <head>
+  <title>PearJS</title>
   <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <style>
     body {
       background-image: url(images/dot.png);
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+      color: #7a9640;
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #7a9640;
     }
 
     .title {
@@ -27,12 +39,35 @@
         1px 1px 0 #504c1c;
       margin-top: -20px;
     }
+
+    .title .subtext {
+      color: #504c1c;
+      font-size: 1.25em;
+      font-weight: 700;
+      margin-top: 60px;
+      line-height: 1.5em;
+    }
+
+    .social #twitter {
+      width: 40px;
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 
 <body>
-<div class='title'>
-  <img src='images/logo.png' />
-  <div class='text'>PearJS</div>
-</div>
+  <div class='title'>
+    <img src='images/logo.png' />
+    <div class='text'>PearJS</div>
+    <div class='subtext'>
+      a video podcast series<br>
+      by <a href='https://twitter.com/0x604' target='_new'>@0x604</a> & <a href='https://twitter.com/sxywu' target='_new'>@sxywu</a>
+    </div>
+    <div class='social'>
+      <a href='https://twitter.com/hellopearjs' target='_new'>
+        <img id='twitter' src="images/twitter.svg"/>
+      </a>
+    </div>
+  </div>
 </body>
