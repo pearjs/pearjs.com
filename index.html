@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <head>
   <title>PearJS</title>
-  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel|Roboto:400,700' rel='stylesheet' type='text/css'>
   <style>
     body {
-      background-image: url(images/dot.png);
+      background-image:
+        radial-gradient(hsl(72, 54%, 89%) 15%, transparent 15%),
+        radial-gradient(hsl(72, 54%, 89%) 15%, transparent 15%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
       font-family: 'Roboto', sans-serif;
-    }
-
-    a {
-      color: #7a9640;
-      text-decoration: none;
-    }
-
-    a:hover {
-      border-bottom: 2px solid #7a9640;
-    }
-
-    .title {
       text-align: center;
       padding: 60px;
     }
 
-    .title img {
+    a {
+      color: hsl(78, 40%, 42%);
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-bottom: 2px solid hsl(78, 40%, 42%);
+    }
+
+    img {
       width: 150px;
     }
 
-    .title .text {
-      font-weight: 600;
+    h1 {
       font-size: 7em;
       font-family: 'Grand Hotel', cursive;
-      color: #bed687;
-      text-shadow: 5px 5px 0 #504c1c,
-        -1px -1px 0 #504c1c,
-        1px -1px 0 #504c1c,
-        -1px 1px 0 #504c1c,
-        1px 1px 0 #504c1c;
-      margin-top: -20px;
+      color: hsl(78, 49%, 68%);
+      text-shadow:
+        5px  5px 0 hsl(55, 48%, 21%),
+       -1px -1px 0 hsl(55, 48%, 21%),
+        1px -1px 0 hsl(55, 48%, 21%),
+       -1px  1px 0 hsl(55, 48%, 21%),
+        1px  1px 0 hsl(55, 48%, 21%);
+      margin: -20px 0 0;
     }
 
-    .title .subtext {
-      color: #504c1c;
+    .subtext {
+      color: hsl(55, 48%, 21%);
       font-size: 1.25em;
       font-weight: 700;
       margin-top: 60px;
@@ -52,22 +52,18 @@
       width: 40px;
       margin-top: 40px;
     }
-
   </style>
 </head>
-
 <body>
-  <div class='title'>
-    <img src='images/logo.png' />
-    <div class='text'>PearJS</div>
-    <div class='subtext'>
-      a video podcast series<br>
-      by <a href='https://twitter.com/0x604' target='_new'>@0x604</a> & <a href='https://twitter.com/sxywu' target='_new'>@sxywu</a>
-    </div>
-    <div class='social'>
-      <a href='https://twitter.com/hellopearjs' target='_new'>
-        <img id='twitter' src="images/twitter.svg"/>
-      </a>
-    </div>
+  <img src='images/logo.png' />
+  <h1>PearJS</h1>
+  <div class='subtext'>
+    a video podcast series<br>
+    by <a href='https://twitter.com/0x604' target='_new'>@0x604</a> & <a href='https://twitter.com/sxywu' target='_new'>@sxywu</a>
+  </div>
+  <div class='social'>
+    <a href='https://twitter.com/hellopearjs' target='_new'>
+      <img id='twitter' src="images/twitter.svg"/>
+    </a>
   </div>
 </body>
