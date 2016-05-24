@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
   <title>PearJS</title>
-  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel|Roboto:400,700' rel='stylesheet' type='text/css'>
   <style>
     body {
       background-image: url(images/dot.png);
       font-family: 'Roboto', sans-serif;
+      text-align: center;
+      padding: 60px;
     }
 
     a {
@@ -18,17 +19,11 @@
       border-bottom: 2px solid #7a9640;
     }
 
-    .title {
-      text-align: center;
-      padding: 60px;
-    }
-
-    .title img {
+    img {
       width: 150px;
     }
 
-    .title .text {
-      font-weight: 600;
+    h1 {
       font-size: 7em;
       font-family: 'Grand Hotel', cursive;
       color: #bed687;
@@ -37,10 +32,10 @@
         1px -1px 0 #504c1c,
         -1px 1px 0 #504c1c,
         1px 1px 0 #504c1c;
-      margin-top: -20px;
+      margin: -20px 0 0;
     }
 
-    .title .subtext {
+    .subtext {
       color: #504c1c;
       font-size: 1.25em;
       font-weight: 700;
@@ -52,22 +47,18 @@
       width: 40px;
       margin-top: 40px;
     }
-
   </style>
 </head>
-
 <body>
-  <div class='title'>
-    <img src='images/logo.png' />
-    <div class='text'>PearJS</div>
-    <div class='subtext'>
-      a video podcast series<br>
-      by <a href='https://twitter.com/0x604' target='_new'>@0x604</a> & <a href='https://twitter.com/sxywu' target='_new'>@sxywu</a>
-    </div>
-    <div class='social'>
-      <a href='https://twitter.com/hellopearjs' target='_new'>
-        <img id='twitter' src="images/twitter.svg"/>
-      </a>
-    </div>
+  <img src='images/logo.png' />
+  <h1>PearJS</h1>
+  <div class='subtext'>
+    a video podcast series<br>
+    by <a href='https://twitter.com/0x604' target='_new'>@0x604</a> & <a href='https://twitter.com/sxywu' target='_new'>@sxywu</a>
+  </div>
+  <div class='social'>
+    <a href='https://twitter.com/hellopearjs' target='_new'>
+      <img id='twitter' src="images/twitter.svg"/>
+    </a>
   </div>
 </body>
